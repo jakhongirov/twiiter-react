@@ -1,4 +1,5 @@
 import './Happen.scss';
+import content from '../../Localization/Content';
 import imageperson from '../../Assets/image/Ellipse 3.png';
 import galleryimg from '../../Assets/image/Vector.svg';
 import gifimg from '../../Assets/image/Vector (1).svg';
@@ -6,7 +7,7 @@ import statsimg from '../../Assets/image/Vector (2).svg';
 import smilesimg from '../../Assets/image/Vector (3).svg';
 import dataimg from '../../Assets/image/Group.svg';
 
-function Happen() {
+function Happen({lang}) {
 	return (
 		<section className='Happen'>
 			<div className='container'>
@@ -24,7 +25,7 @@ function Happen() {
 							className='text'
 							cols={40}
 							rows={2}
-							placeholder='What’s happening'
+							placeholder={content[lang].main.Placeholder}
 						/>
 					</div>
 

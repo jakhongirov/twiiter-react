@@ -1,7 +1,8 @@
 import './Header.scss';
+import content from '../../Localization/Content';
 import imageperson from '../../Assets/image/Ellipse 3.png';
 
-function Header() {
+function Header({ lang }) {
 	return (
 		<header className='header'>
 			<div className='container'>
@@ -19,70 +20,74 @@ function Header() {
 					<ul className='nav__list'>
 						<li className='nav__item'>
 							<a className='nav__link nav__link--active' href='#link'>
-								Home
+								{content[lang].header.links.Home}
 							</a>
 						</li>
 
 						<li className='nav__item'>
 							<a className='nav__link' href='#link'>
-								Explore
+								{content[lang].header.links.Explore}
 							</a>
 						</li>
 
 						<li className='nav__item'>
 							<a className='nav__link' href='#link'>
-								Notifications
+								{content[lang].header.links.Notifications}
 							</a>
 						</li>
 
 						<li className='nav__item'>
 							<a className='nav__link' href='#link'>
-								Messages
+								{content[lang].header.links.Messages}
 							</a>
 						</li>
 
 						<li className='nav__item'>
 							<a className='nav__link' href='#link'>
-								Bookmarks
+								{content[lang].header.links.Bookmarks}
 							</a>
 						</li>
 
 						<li className='nav__item'>
 							<a className='nav__link' href='#link'>
-								Lists
+								{content[lang].header.links.Lists}
 							</a>
 						</li>
 
 						<li className='nav__item'>
 							<a className='nav__link' href='#link'>
-								Profile
+								{content[lang].header.links.Profile}
 							</a>
 						</li>
 
 						<li className='nav__item'>
 							<a className='nav__link' href='#link'>
-								More
+								{content[lang].header.links.More}
 							</a>
 						</li>
 					</ul>
 
 					<button className='nav__btn'>
-               <a className='btn__link' href='#link'>
-						Tweet
-					</a>
-               </button>
+						<a className='btn__link' href='#link'>
+							Tweet
+						</a>
+					</button>
 				</nav>
 
 				<div className='user'>
-					<img className='user__img' src={imageperson} alt='person' width='50' height='50' />
+					<img
+						className='user__img'
+						src={imageperson}
+						alt='person'
+						width='50'
+						height='50'
+					/>
 					<div>
 						<span className='user__name'>Bobur</span>
 						<span className='user__email'>@bobur_mavlonov</span>
 					</div>
 					<strong className='points'>...</strong>
 				</div>
-
-				
 			</div>
 		</header>
 	);

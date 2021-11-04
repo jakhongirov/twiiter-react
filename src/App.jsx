@@ -1,16 +1,19 @@
+import React from 'react';
 import './App.scss';
 import Header from './Components/Header/Header';
 import Main from './Components/Main/Main';
 import Footer from './Components/Footer/Footer';
 
 function App() {
+	const [lang, setLang] = React.useState('en');
+
 	return (
 		<div className='container'>
-			<Header />
+			<Header lang={lang} />
 
-			<Main />
+			<Main lang={lang} setLang={setLang} />
 
-			<Footer />
+			<Footer lang={lang}/>
 		</div>
 	);
 }
