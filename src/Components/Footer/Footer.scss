@@ -1,0 +1,143 @@
+.footer .container {
+	display: inline-block;
+	width: 300px;
+	max-width: 600px;
+	padding: 0;
+}
+
+.search {
+	display: block;
+	width: 100%;
+	max-width: 320px;
+	height: 40px;
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 5px;
+	padding-left: 40px;
+	border-radius: 31px;
+	border: none;
+	background: #eff3f4;
+}
+
+.search--bg-img {
+	background-image: url('../../Assets/image/search.svg');
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	background-size: 20px;
+}
+
+.servise {
+   width: 350px;
+	background-color: #f7f9f9;
+	padding: 20px 15px;
+	margin-bottom: 40px;
+}
+
+.setting {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.heading__setting {
+	margin: 0;
+}
+
+.setting-__btn {
+	border: none;
+	background: transparent;
+}
+
+.setting__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.setting__item {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.setting__item-box span {
+	display: block;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 21px;
+	color: #393b41;
+	opacity: 0.6;
+}
+
+.setting-more {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 100%;
+	color: #1da1f2;
+}
+
+.users {
+   width: 350px;
+	margin-bottom: 30px;
+	padding: 20px 15px;
+	background-color: #f7f9f9;
+}
+
+.users__heaing {
+	margin: 0;
+	margin-bottom: 25px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+	color: #000000;
+}
+
+.users__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.users__item {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 36px;
+   padding: 8px;
+	padding-left: 70px;
+}
+
+.users__item:nth-child(1){
+   background-image: url('../../Assets/image/usertwo.png');
+   background-repeat: no-repeat;
+   background-size: 60px 60px;
+   background-position: 0px 0px;
+}
+
+.users__item:nth-child(2){
+   background-image: url('../../Assets/image/userone.png');
+   background-repeat: no-repeat;
+   background-size: 60px 60px;
+   background-position: 0px 0px;
+}
+
+.user__email {
+	margin: 0;
+}
+
+.follow-btn {
+   width: 90px;
+   height: 30px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 100%;
+	color: #ffffff;
+   border: none;
+	background: #000000;
+	border-radius: 50px;
+}
