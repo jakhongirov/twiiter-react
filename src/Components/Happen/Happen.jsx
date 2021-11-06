@@ -25,7 +25,7 @@ function Happen({lang}) {
 							className='text'
 							cols={40}
 							rows={2}
-							placeholder={content[lang].main.Placeholder}
+							placeholder={content[lang].main.Home.Placeholder}
 						/>
 					</div>
 

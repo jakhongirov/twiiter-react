@@ -5,27 +5,37 @@ import Post from '../Posts/Posts';
 import themeimg from '../../Assets/image/theme.svg';
 import content from '../../Localization/Content';
 
-function Main({lang , setLang}) {
-	// const Theme = React.useRef();
+function Main({lang , setLang, Theme, setTheme }) {
+	
 	
 	return (
 		<>
 			<main className='main'>
 				<div className='container'>
 					<span className='span'>
-						<h1 className='heading'>{content[lang].main.Home}</h1>
+						<h1 className='heading'>{content[lang].main.Home.Home}</h1>
 
 						<select
 							className='lang__select'
 							value={lang}
 							onChange={(evt) => {
 								setLang(evt.target.value);
+								window.localStorage.setItem('lang', JSON.stringify(evt.target.value))
 							}}>
 							<option value='en'>En</option>
 							<option value='uz'>Uz</option>
 						</select>
 
-						<button className='theme__btn'>
+						<button className='theme__btn' onClick={()=>{
+							setTheme((prev)=> !prev)
+							if(Theme){
+								window.document.body.classList.add('dark')
+								window.localStorage.setItem('theme', JSON.stringify(Theme))
+							}else if(!Theme){
+								window.document.body.classList.remove('dark')
+								window.localStorage.setItem('theme', JSON.stringify(Theme))
+							}
+						}}>
 							<img
 								className='theme-img'
 								src={themeimg}
@@ -37,9 +47,9 @@ function Main({lang , setLang}) {
 					</span>
 				</div>
 
-				<Happen lang={lang}/>
+					<Happen lang={lang}/>
 
-				<Post />
+					<Post />
 			</main>
 		</>
 	);

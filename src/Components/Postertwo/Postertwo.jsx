@@ -10,7 +10,7 @@ function Postertwo() {
 		<div className='post__two'>
 			<div className='post__two-box'>
 				<h3 className='poster__name'>
-            cloutexhibition<span className='poster__email'>@RajLahoti · 22m</span>
+            cloutexhibition<span className='poster__email'> @RajLahoti · 22m</span>
 				</h3>
 
 				<strong className='point'>···</strong>

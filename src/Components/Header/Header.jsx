@@ -1,8 +1,10 @@
 import './Header.scss';
 import content from '../../Localization/Content';
 import imageperson from '../../Assets/image/Ellipse 3.png';
+import {NavLink} from 'react-router-dom';
 
-function Header({ lang }) {
+
+function Header({ lang, Theme}) {
 	return (
 		<header className='header'>
 			<div className='container'>
@@ -19,51 +21,51 @@ function Header({ lang }) {
 				<nav className='header__nav'>
 					<ul className='nav__list'>
 						<li className='nav__item'>
-							<a className='nav__link nav__link--active' href='#link'>
+							<NavLink to='/' className='nav__link nav__link--active' >
 								{content[lang].header.links.Home}
-							</a>
+							</NavLink>
 						</li>
 
 						<li className='nav__item'>
-							<a className='nav__link' href='#link'>
+							<NavLink to='/explore' className='nav__link' >
 								{content[lang].header.links.Explore}
-							</a>
+							</NavLink>
 						</li>
 
 						<li className='nav__item'>
-							<a className='nav__link' href='#link'>
+							<NavLink to='/notifications' className='nav__link' >
 								{content[lang].header.links.Notifications}
-							</a>
+							</NavLink>
 						</li>
 
 						<li className='nav__item'>
-							<a className='nav__link' href='#link'>
+							<NavLink to='/messages' className='nav__link' >
 								{content[lang].header.links.Messages}
-							</a>
+							</NavLink>
 						</li>
 
 						<li className='nav__item'>
-							<a className='nav__link' href='#link'>
+							<NavLink to='/bookmarks' className='nav__link' >
 								{content[lang].header.links.Bookmarks}
-							</a>
+							</NavLink>
 						</li>
 
 						<li className='nav__item'>
-							<a className='nav__link' href='#link'>
+							<NavLink to='/lists' className='nav__link' >
 								{content[lang].header.links.Lists}
-							</a>
+							</NavLink>
 						</li>
 
 						<li className='nav__item'>
-							<a className='nav__link' href='#link'>
+							<NavLink to='/profile' className='nav__link' >
 								{content[lang].header.links.Profile}
-							</a>
+							</NavLink>
 						</li>
 
 						<li className='nav__item'>
-							<a className='nav__link' href='#link'>
+							<NavLink to='/more' className='nav__link'>
 								{content[lang].header.links.More}
-							</a>
+							</NavLink>
 						</li>
 					</ul>
 

@@ -14,8 +14,20 @@ const content = {
 		},
 
 		main: {
-			Home: 'Asosiy',
-			Placeholder: `Nimalar bo'lyapti`,
+			Home: {
+				Home: 'Asosiy',
+				Placeholder: `Nimalar bo'lyapti`,
+			},
+
+			profile: {
+				Edit: 'Profilni tahrirlash',
+				Tweets: 'Tvitlar',
+				Replies: 'Tvitlar va javoblar',
+				Media: 'OAV',
+				Likes: 'Yoqtirganlari',
+				Following: 'Obunalar',
+				Follows: 'Obunachilar',
+			},
 		},
 
 		footer: {
@@ -44,12 +56,24 @@ const content = {
 			},
 		},
 
-      main: {
-			Home: 'Home',
-			Placeholder: `What’s happening`,
+		main: {
+			Home: {
+				Home: 'Home',
+				Placeholder: `What’s happening`,
+			},
+
+			profile: {
+				Edit: 'Edit profile',
+				Tweets: 'Tweets',
+				Replies: 'Tweets & replies',
+				Media: 'Media',
+				Likes: 'Likes',
+				Following: 'Following',
+				Follows: 'Follows',
+			},
 		},
 
-      footer: {
+		footer: {
 			Search: 'Search Twitter',
 			Trends: 'Trends for you',
 			Trending: 'Trending in Germany',
@@ -62,4 +86,4 @@ const content = {
 	},
 };
 
-export default content
+export default content;
