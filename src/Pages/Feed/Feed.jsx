@@ -9,13 +9,11 @@ function Feed({lang,setLang, Theme, setTheme}) {
 
 	return (
 		<>
-			{/* <div className='container'> */}
 				<Header lang={lang} />
 
 				<Main lang={lang} setLang={setLang} Theme={Theme} setTheme={setTheme} />
 
 				<Footer lang={lang} />
-			{/* </div> */}
 		</>
 	);
 }

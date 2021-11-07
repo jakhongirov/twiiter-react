@@ -10,6 +10,7 @@ const content = {
 				Lists: `Ro'yxatlar`,
 				Profile: 'Profil',
 				More: `Ko'proq`,
+				logout: 'Chiqish',
 			},
 		},
 
@@ -53,6 +54,7 @@ const content = {
 				Lists: `Lists`,
 				Profile: 'Profile',
 				More: `More`,
+				logout: 'Log out',
 			},
 		},
 

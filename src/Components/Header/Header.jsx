@@ -2,9 +2,13 @@ import './Header.scss';
 import content from '../../Localization/Content';
 import imageperson from '../../Assets/image/Ellipse 3.png';
 import {NavLink} from 'react-router-dom';
+import useToken from '../../Hooks/useToken';
 
 
 function Header({ lang, Theme}) {
+
+	const [,setToken]= useToken();
+
 	return (
 		<header className='header'>
 			<div className='container'>
@@ -74,6 +78,10 @@ function Header({ lang, Theme}) {
 							Tweet
 						</a>
 					</button>
+
+					<button className='nav__logout-btn' onClick={()=>{
+						setToken(false)
+					}}>{content[lang].header.links.logout}</button>
 				</nav>
 
 				<div className='user'>

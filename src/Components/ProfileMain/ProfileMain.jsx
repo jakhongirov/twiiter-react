@@ -8,7 +8,7 @@ import ProfilePosts from '../ProfilePosts/ProfilePosts';
 import content from '../../Localization/Content';
 
 function ProfileMain({lang}) {
-	return (
+	return (	
 		<>
 			<main className='profilemain'>
 				<section>
