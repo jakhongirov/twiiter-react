@@ -1,21 +1,22 @@
 import React from 'react';
 import './LoginMain.scss';
 import useToken from '../../Hooks/useToken';
+import SingUp from '../SingUp/SingUp';
 
 function LoginMain() {
+	const [, setState] = useToken();
+	const [modal, setModal] = React.useState(false);
 
-	const[, setState]= useToken()	
-
-	const handleSubmit = (evt)=>{
+	const handleSubmit = (evt) => {
 		evt.preventDefault();
 
-		const {username, userpassword} = evt.target.elements;
+		const { username, userpassword } = evt.target.elements;
 
 		setState({
 			username: username.value,
-			userpassword : userpassword.value,
+			userpassword: userpassword.value,
 		});
-	}
+	};
 
 	return (
 		<>
@@ -32,7 +33,7 @@ function LoginMain() {
 
 						<h1 className='login__heading'>Log in to Twitter</h1>
 
-						<form method="POST" onSubmit={handleSubmit}>
+						<form method='POST' onSubmit={handleSubmit}>
 							<input
 								className='user__login'
 								type='text'
@@ -49,12 +50,19 @@ function LoginMain() {
 							/>
 
 							<button className='login-btn'>Log In</button>
-
-							<div className='btns'>
-								<button className='btn'>Forgot password?</button>
-								<button className='btn'>Sign up to Twitter</button>
-							</div>
 						</form>
+
+						<div className='btns'>
+								<button className='btn'>Forgot password?</button>
+								<button
+									className='btn'
+									onClick={() => setModal((prev) => !prev)}>
+									Sign up to Twitter
+								</button>
+
+								{modal && <SingUp setModal={setModal}/>}
+								
+							</div>
 					</div>
 				</div>
 			</main>

@@ -34,7 +34,6 @@
 	margin: 0;
 	padding: 5px;
 	margin-bottom: 30px;
-	// text-align: center;
 }
 
 .nav__item:nth-child(1) {
@@ -103,7 +102,7 @@
 	color: #000000;
 	text-decoration: none;
 
-	&--active {
+	&.active {
 		font-weight: bold;
 	}
 }
